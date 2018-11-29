@@ -2,7 +2,7 @@
 
 https://adventofcode.com/2018
 
-These are my personal solutions, they also aren't the best.
+*These are my personal solutions.*
 
 | Day | Title |  |  | Solutions | | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
