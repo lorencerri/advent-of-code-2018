@@ -2,6 +2,8 @@
 
 https://adventofcode.com/2018
 
+These are my personal solutions, they also aren't the best.
+
 | Day | Title |  |  | Solutions | | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | | | JavaScript | Rust | Java | Python | Ruby |
