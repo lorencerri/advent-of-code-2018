@@ -3,13 +3,10 @@ Day 1 - Chronal Calibration [Part 2]
 https://adventofcode.com
 
 Declare Input Here: */
-var input = '+7, +7, -2, -7, -4';
+var input = '+7, +7, -2, -7, -4'.split(', ');
 
-// Init Sum
-var sum = 0;
-var list = [];
-var found;
-input = input.split(', ');
+// Variables
+var sum = 0, list = [], found;
 
 // Calc Loop
 while (!found) {
