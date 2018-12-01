@@ -16,8 +16,8 @@ while (!found) {
   for (var i = 0; i < input.length; i++) {
     sum += parseInt(input[i]);
     if (list.includes(sum)) {
-      found = true;
       console.log(sum);
+      found = true;
       break;
     } else list.push(sum);
   }
