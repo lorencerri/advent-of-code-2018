@@ -9,7 +9,7 @@ https://adventofcode.com/2018
 | Day | Title |  |  | Solutions | | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | | | JavaScript | Rust | Java | Python | Ruby |
-| 1 | Chronal Calibration | ✓ | - | 𐄂 | ✓ | ✓ |
+| 1 | Chronal Calibration | ✓ | - | - | ✓ | ✓ |
 | 2 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
 | 3 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
 | 4 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
