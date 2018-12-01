@@ -6,16 +6,16 @@ Declare Input Here: */
 var input = '+7, +7, -2, -7, -4'.split(', ');
 
 // Variables
-var sum = 0, list = [], found;
+var freq = 0, list = [], found;
 
 // Calc Loop
 while (!found) {
   for (var i = 0; i < input.length; i++) {
-    sum += parseInt(input[i]);
-    if (list.includes(sum)) {
-      console.log(sum);
+    freq += parseInt(input[i]);
+    if (list.includes(freq)) {
+      console.log(freq);
       found = true;
       break;
-    } else list.push(sum);
+    } else list.push(freq);
   }
 }
