@@ -1,7 +1,7 @@
 # Day 1 - Chronal Calibration [Part 1]
 # https://adventofcode.com
 #
-# Declare Input Here:
+# Input:
 input = '+7, +7, -2, -7, -4'.split(', ')
 
 # Variables
