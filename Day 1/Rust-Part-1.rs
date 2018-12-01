@@ -3,7 +3,7 @@
 
 fn main() {
   
-  // Declare Input Here:
+  // Input:
   let input = "-1, +2, -3, +1, -4".split(", ");
 
   let mut freq = 0;
