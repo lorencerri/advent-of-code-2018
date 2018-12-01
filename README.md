@@ -4,10 +4,14 @@ https://adventofcode.com/2018
 
 *These are my personal solutions.*
 
+*I'm only putting this here so I
+can look back on my code in the
+future.*
+
 | Day | Title |  |  | Solutions | | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | | | JavaScript | Rust | Java | Python | Ruby |
-| 1 | _ | ? | ? | ? | ? | ? |
+| 1 | Chronal Calibration | ? | ? | ? | ? | ? |
 | 2 | _ | ? | ? | ? | ? | ? |
 | 3 | _ | ? | ? | ? | ? | ? |
 | 4 | _ | ? | ? | ? | ? | ? |
