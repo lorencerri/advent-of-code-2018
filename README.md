@@ -4,9 +4,9 @@ https://adventofcode.com/2018
 
 *These are my personal solutions.*
 
-*I'm only putting this here so I
-can look back on my code in the
-future.*
+*I'm putting these here so I can <br>
+look back at my code in the <br>
+future and see how I've changed.*
 
 | Day | Title |  |  | Solutions | | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
