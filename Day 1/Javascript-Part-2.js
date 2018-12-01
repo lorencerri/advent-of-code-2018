@@ -3,7 +3,7 @@ Day 1 - Chronal Calibration [Part 2]
 https://adventofcode.com
 
 Declare Input Here: */
-const input = ``;
+var input = `+7, +7, -2, -7, -4`;
 
 // Declare Variables
 var frequencies, sum, i, found, sign, num;
@@ -11,7 +11,7 @@ var frequencies, sum, i, found, sign, num;
 // Initialize Variables
 frequencies = [];
 sum = 0;
-i = 0
+i = 0;
 input = input.split(', ');
 
 while (!found) {
@@ -23,13 +23,13 @@ while (!found) {
   else sum += num;
 
   // Check if it has been a frequency
-  if (stream.includes(sum)) {
-    console.log(sum)
-    notFound = false;
+  if (frequencies.includes(sum)) {
+    console.log(sum);
+    found = true;
   } else frequencies.push(sum); // Otherwise, push to list
 
   // Increment
-  i++
+  i++;
 
   // Check if end of list, if so reset index
   if (i == input.length) i = 0;
