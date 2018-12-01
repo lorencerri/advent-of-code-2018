@@ -2,7 +2,7 @@
 Day 1 - Chronal Calibration [Part 2]
 https://adventofcode.com
 
-Declare Input Here: */
+Input: */
 var input = '+7, +7, -2, -7, -4'.split(', ');
 
 // Variables
