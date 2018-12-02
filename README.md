@@ -4,7 +4,7 @@ https://adventofcode.com/2018
 
 *These are my personal solutions.*
 
-*I'm putting these here so I can look back at my code in the future and see how I've changed & could've done better.*
+*I'm putting these here so I can look back at my code in the future and see how I've changed & where I could've improved.*
 
 | Day | Title |  |  | Solutions | | |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
