@@ -1,3 +1,4 @@
+// Variables
 var input = 'INPUT_GOES_HERE'.split('\n');
 var twice = 0;
 var thrice = 0;
