@@ -13,7 +13,7 @@ for (var i = 0; i < input.length; i++) {
     
     var letter = input[i][x];
 
-    // Add to instances (if not already added)
+    // Update Instances
     if (!instances[letter]) instances[letter] = 1;
     else instances[letter]++;
 
