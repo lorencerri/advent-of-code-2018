@@ -2,7 +2,6 @@
 var input = 'INPUT_GOES_HERE'.split('\n')
 var best = { score: 0 };
 var bestStr = '';
-var strLen = 26;
 
 // Loop every element
 for (var i = 0; i < input.length; i++) {
@@ -13,7 +12,7 @@ for (var i = 0; i < input.length; i++) {
   // Score similarity of element
   for (var x = 0; x < testArray.length; x++) {
     var score = 0;
-    for (var y = 0; y < strLen; y++) if (testArray[x][y] === input[i][y]) score++;
+    for (var y = 0; y < testArray[x].length; y++) if (testArray[x][y] === input[i][y]) score++;
     if (score > best.score) best = { score: score, first: input[i], second: testArray[x]}
   }
 
