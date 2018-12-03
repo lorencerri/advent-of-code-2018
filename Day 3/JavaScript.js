@@ -44,7 +44,6 @@ for (var i = 0; i < input.length; i++) {
     }
   }
 
-  // Only one can hit the dab hard enough
   if (!overlapped) puzzleTwo = id;
 
 }
