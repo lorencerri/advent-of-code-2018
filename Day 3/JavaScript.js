@@ -1,7 +1,7 @@
 var input = 'INPUT_GOES_HERE'.split('\n');
 
 // Timer
-console.time('Timer')
+console.time('Timer');
 
 // Variables
 var fabric = {}, puzzleTwo = '';
@@ -33,8 +33,10 @@ for (var i = 0; i < input.length; i++) {
   var overlapped = false;
 
   // Run through every sq. inch of fabrich
-  for (var a = 0; a < w && overlapped; a++) {
-    for (var b = 0; b < h && overlapped; b++) {
+  for (var a = 0; a < w; a++) {
+    if (overlapped) break;
+    for (var b = 0; b < h; b++) {
+      if (overlapped) break;
 
       var cell = `${x + a}x${y + b}`;
       if (fabric[cell].length > 1 || fabric[cell][0] !== id) overlapped = true;
@@ -68,4 +70,4 @@ function getClaimInfo(claim) {
 // Logging
 console.log(`Puzzle #1: ${Object.values(fabric).filter(a => a.length > 1).length}`);
 console.log(`Puzzle #2: ${puzzleTwo}`);
-console.timeEnd('Timer')
+console.timeEnd('Timer');
