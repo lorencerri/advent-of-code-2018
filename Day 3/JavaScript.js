@@ -1,10 +1,10 @@
 var input = 'INPUT_GOES_HERE'.split('\n');
 
-// Timer
+// Create Timer
 console.time('Timer');
 
 // Variables
-var fabric = {}, puzzleTwo = '';
+var fabric = {}, puzzleOne = 0, puzzleTwo = '';
 
 // Run through every input element (Part 1)
 for (var i = 0; i < input.length; i++) {
@@ -16,9 +16,9 @@ for (var i = 0; i < input.length; i++) {
   for (var a = 0; a < w; a++) {
     for (var b = 0; b < h; b++) {
 
-      var cell = `${x + a}x${y + b}`;
-      if (!fabric[cell]) fabric[cell] = [id];
-      else fabric[cell].push(id);
+      var coords = `${x + a}x${y + b}`;
+      if (!fabric[coords]) fabric[coords] = [id];
+      else fabric[coords].push(id);
 
     }
   }
@@ -34,12 +34,13 @@ for (var i = 0; i < input.length; i++) {
 
   // Run through every sq. inch of fabrich
   for (var a = 0; a < w; a++) {
-    if (overlapped) break;
     for (var b = 0; b < h; b++) {
-      if (overlapped) break;
 
-      var cell = `${x + a}x${y + b}`;
-      if (fabric[cell].length > 1 || fabric[cell][0] !== id) overlapped = true;
+      var coords = `${x + a}x${y + b}`;
+      var cell = fabric[coords];
+      
+      if (cell.length > 1) puzzleOne++;
+      if (cell.length > 1 || cell[0] !== id) overlapped = true;
 
     }
   }
@@ -67,6 +68,7 @@ function getClaimInfo(claim) {
 }
 
 // Logging
-console.log(`Puzzle #1: ${Object.values(fabric).filter(a => a.length > 1).length}`);
+
+console.log(`Puzzle #1: ${puzzleOne}`);
 console.log(`Puzzle #2: ${puzzleTwo}`);
 console.timeEnd('Timer');
