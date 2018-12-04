@@ -16,7 +16,7 @@ var minute = { total: 0 };
 
 // Iterate through every input element
 for (var i = 0; i < input.length; i++) {
-  var element = input[i].split(' ');;
+  var element = input[i].split(' ');
   if (element.includes('Guard')) currentID = element[3].replace('#', '');
   else if (element.includes('falls')) startTime = parseInt(element[1].split(':')[1]);
   else {
