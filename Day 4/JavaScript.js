@@ -58,4 +58,4 @@ for (var i in minutes) {
 // Logging
 console.log('Puzzle #1:', guard.id * guard.date.day);
 console.log('Puzzle #2:', minute.id * minute.minute);
-console.timeEnd('Timer');
+console.timeEnd('Timer'); // Averages 11-13ms
