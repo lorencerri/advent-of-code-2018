@@ -11,8 +11,8 @@ https://adventofcode.com/2018
 | | | JavaScript | Rust | Java | Python | Ruby |
 | 1 | Chronal Calibration | ✓ | - | - | ✓ | ✓ |
 | 2 | Inventory Management System | ✓ | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
-| 3 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
-| 4 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
+| 3 | No Matter How You Slice It | ✓ | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
+| 4 | Repose Record | ✓ | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
 | 5 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
 | 6 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
 | 7 | _ | 𐄂 | 𐄂 | 𐄂 | 𐄂 | 𐄂 |
