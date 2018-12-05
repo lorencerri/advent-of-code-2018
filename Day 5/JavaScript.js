@@ -14,25 +14,24 @@ for (var x = 0; x < polymers.length; x++) {
     str = input.replace(new RegExp(`[${polymers[x]}]`, 'gi'), '');
     
     // Reset remaining variable
-    remaining = true
+    remaining = true;
 
     // Loop until no pairs remaining
     while (remaining) {
         remaining = false;
 
         // Iterate until a pair is found
-        for (var i = 0; i < str.length - 1; i++) {
+        for (var i = 0; i < str.length-1; i++) {
             if (Math.abs(str.charCodeAt(i - 1) - str.charCodeAt(i)) == 32) {
-              
+
                 // Update String
                 str = str.substr(0, i - 1) + str.substr(i + 1);
                 remaining = true;
-                break;
 
             }
         }
     }
-    
+
     // Update Results
     values.push(str.length);
 
@@ -41,4 +40,4 @@ for (var x = 0; x < polymers.length; x++) {
 // Logging
 console.log('Puzzle #1:', values.shift());
 console.log('Puzzle #2:', Math.min(...values));
-console.timeEnd('Timer');
+console.timeEnd('Timer'); // Averages 7429ms
