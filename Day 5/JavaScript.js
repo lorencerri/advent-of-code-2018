@@ -5,26 +5,27 @@ console.time('Timer');
 let input = 'INPUT_GOES_HERE';
 let polymers = '*abcdefghijklmnopqrstuvwxyz';
 let values = [];
-let temp;
+let str;
 
+// Iterate through every character
 for (var x = 0; x < polymers.length; x++) {
 
     // Replace all of a certain character
-    temp = input.replace(new RegExp(`[${polymers[x]}]`, 'gi'), '');
+    str = input.replace(new RegExp(`[${polymers[x]}]`, 'gi'), '');
     
-    // Reset Remaining Variable
-    remaining = true;
+    // Reset remaining variable
+    remaining = true
 
     // Loop until no pairs remaining
     while (remaining) {
         remaining = false;
 
         // Iterate until a pair is found
-        for (var i = 0; i < temp.length - 1; i++) {
-            if (Math.abs(temp.charCodeAt(i - 1) - temp.charCodeAt(i)) == 32) {
+        for (var i = 0; i < str.length - 1; i++) {
+            if (Math.abs(str.charCodeAt(i - 1) - str.charCodeAt(i)) == 32) {
               
                 // Update String
-                temp = temp.substr(0, i - 1) + temp.substr(i + 1);
+                str = str.substr(0, i - 1) + str.substr(i + 1);
                 remaining = true;
                 break;
 
@@ -33,7 +34,7 @@ for (var x = 0; x < polymers.length; x++) {
     }
     
     // Update Results
-    values.push(temp.length);
+    values.push(str.length);
 
 }
 
