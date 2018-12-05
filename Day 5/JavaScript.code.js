@@ -11,7 +11,6 @@ for (var x = 0; x < polymers.length; x++) {
             if (Math.abs(str.charCodeAt(i - 1) - str.charCodeAt(i)) == 32) {
                 str = str.substr(0, i - 1) + str.substr(i + 1);
                 remaining = true;
-                break;
             }
         }
     }
