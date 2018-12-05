@@ -12,3 +12,5 @@ for (var x = 0; x < polymers.length; x++) {
 
 console.log('Puzzle #1:', values.shift());
 console.log('Puzzle #2:', Math.min(...values));
+
+// Currently o(n^2), use a stack data structure to improve performance
