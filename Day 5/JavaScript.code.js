@@ -4,10 +4,7 @@ let regex = new RegExp('(Aa|Bb|Cc|Dd|Ee|Ff|Gg|Hh|Ii|Jj|Kk|Ll|Mm|Nn|Oo|Pp|Qq|Rr|S
 
 for (var x = 0; x < polymers.length; x++) {
     str = input.replace(new RegExp(polymers[x], 'gi'), '');
-    do {
-        len = str.length;
-        str = str.replace(regex, '');
-    } while (len !== str.length);
+    do { len = str.length; str = str.replace(regex, ''); } while (len !== str.length);
     values.push(str.length);
 }
 
