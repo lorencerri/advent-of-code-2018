@@ -2,21 +2,20 @@
 console.time('Timer');
 
 // Variables
-let polymers = '*abcdefghijklmnopqrstuvwxyz';
 let input = 'INPUT_GOES_HERE';
-let values = [];
-let str;
-let len;
+let values = [], str, len, l, polymers = ' abcdefghijklmnopqrstuvwxyz';
+let regex = new RegExp('(Aa|Bb|Cc|Dd|Ee|Ff|Gg|Hh|Ii|Jj|Kk|Ll|Mm|Nn|Oo|Pp|Qq|Rr|Ss|Tt|Uu|Vv|Ww|Xx|Yy|Zz|aA|bB|cC|dD|eE|fF|gG|hH|iI|jJ|kK|lL|mM|nN|oO|pP|qQ|rR|sS|tT|uU|vV|wW|xX|yY|zZ)', 'g');
 
 // Iterate through every character
 for (var x = 0; x < polymers.length; x++) {
 
     // Replace all of a certain character
-    str = input.replace(new RegExp(`[${polymers[x]}]`, 'gi'), '');
+    str = input.replace(new RegExp(polymers[x], 'gi'), '');
 
-    do { // Loop until no pairs remaining
+    // Loop until no pairs remaining
+    do {
         len = str.length;
-        for (var i = 0; i < str.length-1; i++) if (Math.abs(str.charCodeAt(i - 1) - str.charCodeAt(i)) == 32) str = str.substr(0, i - 1) + str.substr(i + 1);
+        str = str.replace(regex, '');
     } while (len !== str.length);
 
     // Update Results
@@ -27,4 +26,4 @@ for (var x = 0; x < polymers.length; x++) {
 // Logging
 console.log('Puzzle #1:', values.shift());
 console.log('Puzzle #2:', Math.min(...values));
-console.timeEnd('Timer'); // Averages 7429ms
+console.timeEnd('Timer'); // Averages 3889ms
